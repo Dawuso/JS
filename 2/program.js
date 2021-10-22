@@ -96,3 +96,27 @@ for(i=0;i<5;i++){
 console.log(imiona);
 
 //Zadanie 5
+let towary = "jajka, mleko, masło, chleb, ser, szynka, olej, cukier";
+let tab_t = towary.split(", ");
+let cennik = [];
+for(i=0;i<tab_t.length;i++){
+    cennik[i]={
+        "produkt": tab_t[i],
+        "cena": Math.round(Math.random() * 600 + 1)/100
+    }
+}
+console.table(cennik);
+
+let zakupy = [];
+let kwota = 0;
+for(i=0;i<=Math.floor(cennik.length/2);i++){
+    let x = Math.round(Math.random() * (cennik.length-2) + 1);
+    zakupy[i]={
+        "produkt": cennik[x].produkt,
+        "cena": cennik[x].cena,
+        "ilość": Math.round(Math.random() * 4 + 1)
+    }
+    kwota += zakupy[i].cena * zakupy[i].ilość;
+}
+console.table(zakupy);
+console.log("Całkowita cena zakupów: " + kwota);
