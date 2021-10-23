@@ -1,4 +1,5 @@
 //Zadanie 1
+console.log("Zadanie 1");
 let str = "";
 for(let i=1;i<=100;i++){
     if(i%2==0)
@@ -12,6 +13,7 @@ for(let i=1;i<=100;i++){
 console.log(str);
 
 //Zadanie 2
+console.log("Zadanie 2");
 let t = prompt("Podaj długość promienia koła:");
 let r = parseInt(t, 10);
 let o = Math.round(2 * Math.PI * r * 100)/100;
@@ -20,6 +22,7 @@ let p = Math.round(Math.PI * Math.pow(r, 2) * 100)/100;
 console.log("Pole: " + p);
 
 //Zadanie 3
+console.log("Zadanie 3");
 let tab = [];
 function wypisz(){
     str="";
@@ -81,6 +84,7 @@ function zamiana(){
 zamiana();
 
 //Zadanie 4
+console.log("Zadanie 4");
 let imiona = ["Dawid", "Andrzej", "Radosław", "Przemysław", "Edward"];
 for(i=0;i<5;i++){
     let n = imiona[i].replace(/a/gi, "4").replace(/e/gi, "3");
@@ -96,6 +100,7 @@ for(i=0;i<5;i++){
 console.log(imiona);
 
 //Zadanie 5
+console.log("Zadanie 5");
 let towary = "jajka, mleko, masło, chleb, ser, szynka, olej, cukier";
 let tab_t = towary.split(", ");
 let cennik = [];
